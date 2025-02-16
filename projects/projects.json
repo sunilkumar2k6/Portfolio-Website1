@@ -1,0 +1,32 @@
+[
+  {
+    "name": "GymBuddy Website",
+    "desc": "GymBuddy Website is a fitness platform for tracking workouts, setting goals, and connecting with a fitness community.",
+    "image": "gymbuddy",
+    "category": "basicweb",
+    "links": {
+      "view": "#",
+      "code": "https://github.com/sunilkumar2k6/GymBuddy"
+    }
+  },
+  {
+    "name": "Voting System",
+    "desc": "Voting System is a secure and efficient platform for managing and conducting online elections with real-time results.",
+    "image": "votingsystem",
+    "category": "basicweb",
+    "links": {
+      "view": "#",
+      "code": "https://github.com/sunilkumar2k6/Voting-System"
+    }
+  },
+  {
+    "name": "Portfolio Website",
+    "desc": "Personal Portfolio Website. Don't Need Much Info About It, Just Scroll Down. You're Here Only!",
+    "image": "portfolio1",
+    "category": "basicweb",
+    "links": {
+      "view": "#",
+      "code": "https://github.com/sunilkumar2k6/Portfolio-Website1"
+    }
+  }
+]
