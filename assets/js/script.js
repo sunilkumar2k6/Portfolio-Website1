@@ -38,19 +38,20 @@ $(document).ready(function () {
     });
 
     // <!-- emailjs to mail contact form data -->
-    $("#contact-form").submit(function (event) {
-        emailjs.init("user_TTDmetQLYgWCLzHTDgqxm");
+    emailjs.init("sCDJwK0ochWVmzsVT");
 
-        emailjs.sendForm('contact_service', 'template_contact', '#contact-form')
-            .then(function (response) {
-                console.log('SUCCESS!', response.status, response.text);
-                document.getElementById("contact-form").reset();
-                alert("Form Submitted Successfully");
-            }, function (error) {
-                console.log('FAILED...', error);
-                alert("Form Submission Failed! Try Again");
-            });
-        event.preventDefault();
+    $("#contact-form").submit(function (event) {
+    event.preventDefault(); // Prevent page reload
+
+    emailjs.sendForm("service_2kvjx5b", "template_0lf0q8n", "#contact-form")
+        .then(function (response) {
+            console.log("SUCCESS!", response.status, response.text);
+            document.getElementById("contact-form").reset();
+            alert("Form Submitted Successfully!");
+        }, function (error) {
+            console.log("FAILED...", error);
+            alert("Form Submission Failed! Try Again.");
+        });
     });
     // <!-- emailjs to mail contact form data -->
 
@@ -59,7 +60,7 @@ $(document).ready(function () {
 document.addEventListener('visibilitychange',
     function () {
         if (document.visibilityState === "visible") {
-            document.title = "Portfolio | Jigar Sable";
+            document.title = "Portfolio | Sunil Kumar";
             $("#favicon").attr("href", "assets/images/favicon.png");
         }
         else {
